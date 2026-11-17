@@ -53,11 +53,16 @@ public static void main(String[] args) {
         } else if (respuesta.equals("b")) {
             System.out.println("Respueta incorrecta, la respuesta correcta es: " + respuestasCorrectas[i]);
         } else if (respuesta.equals("c")) {
-            System.out.printf("Respuesta incorrecta, la respueta correcta es: " + respuestasCorrectas[i]);
+            System.out.println("Respuesta incorrecta, la respueta correcta es: " + respuestasCorrectas[i]);
         } else if (respuesta.equals("d")) {
-            System.out.printf("Respuesta incorrecta, la respuesta correcta es: " + respuestasCorrectas[i]);
+            System.out.println("Respuesta incorrecta, la respuesta correcta es: " + respuestasCorrectas[i]);
         }
     }
     System.out.println("Has acabado el test, has tenido " + aciertos + " aciertos");
+    if (aciertos>12){
+        System.out.println("Has suspendido el test");
+    } else if (aciertos>12) {
+        System.out.println("Has aprobado el test");
+    }
     scanner.close();
 }
