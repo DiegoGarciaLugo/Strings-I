@@ -56,6 +56,8 @@ public static void main(String[] args) {
             System.out.println("Respuesta incorrecta, la respueta correcta es: " + respuestasCorrectas[i]);
         } else if (respuesta.equals("d")) {
             System.out.println("Respuesta incorrecta, la respuesta correcta es: " + respuestasCorrectas[i]);
+        } else {
+            System.out.println("Respuesta no valida: a, b, c, d");
         }
     }
     System.out.println("Has acabado el test, has tenido " + aciertos + " aciertos");
