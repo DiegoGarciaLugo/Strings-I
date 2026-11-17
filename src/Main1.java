@@ -60,11 +60,6 @@ public static void main(String[] args) {
             System.out.println("Respuesta no valida: a, b, c, d");
         }
     }
-    System.out.println("Has acabado el test, has tenido " + aciertos + " aciertos");
-    if (aciertos>12){
-        System.out.println("Has suspendido el test");
-    } else if (aciertos>12) {
-        System.out.println("Has aprobado el test");
-    }
+    System.out.println("Has tenido " + aciertos + " aciertos");
     scanner.close();
 }
