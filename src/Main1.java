@@ -59,5 +59,5 @@ public static void main(String[] args) {
         }
     }
     System.out.println("Has acabado el test, has tenido " + aciertos + " aciertos");
-
+    scanner.close();
 }
