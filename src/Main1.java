@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    String resposta = "";
+    String respuesta = "";
     int aciertos = 0;
 
     String[] preguntas = {
@@ -43,6 +43,19 @@ public static void main(String[] args) {
     for (int i = 0; i < preguntas.length; i++) {
         System.out.println("\nPregunta " + (i + i) + ":");
         System.out.println(preguntas[i]);
-        resposta = scanner.nextLine();
+        respuesta = scanner.nextLine();
+
+        if (respuesta.equals(respuestasCorrectas[i])) {
+            System.out.println("Respuesta correcta!");
+            aciertos++;
+        } else if (respuesta.equals("a")) {
+            System.out.println("Respuesta incorrecta, la respuesta correcta es: " + respuestasCorrectas[i]);
+        } else if (respuesta.equals("b")) {
+            System.out.println("Respueta incorrecta, la respuesta correcta es: " + respuestasCorrectas[i]);
+        } else if (respuesta.equals("c")) {
+            System.out.printf("Respuesta incorrecta, la respueta correcta es: " + respuestasCorrectas[i]);
+        } else if (respuesta.equals("d")) {
+            System.out.printf("Respuesta incorrecta, la respuesta correcta es: " + respuestasCorrectas[i]);
+        }
     }
 }
