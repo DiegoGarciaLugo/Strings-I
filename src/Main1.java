@@ -41,7 +41,7 @@ public static void main(String[] args) {
     };
 
     for (int i = 0; i < preguntas.length; i++) {
-        System.out.println("\nPregunta " + (i + i) + ":");
+        System.out.println("\nPregunta " + (i + 1) + ":");
         System.out.println(preguntas[i]);
         respuesta = scanner.nextLine();
 
@@ -58,4 +58,6 @@ public static void main(String[] args) {
             System.out.printf("Respuesta incorrecta, la respuesta correcta es: " + respuestasCorrectas[i]);
         }
     }
+    System.out.println("Has acabado el test, has tenido " + aciertos + " aciertos");
+
 }
